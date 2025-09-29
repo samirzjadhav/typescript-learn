@@ -11,3 +11,20 @@ enum UserRoles {
 }
 
 UserRoles.SUPER_ADMIN;
+
+enum StatusCodes {
+  ABANDONED = "abandoned status code 500",
+  NOTFOUND = "not found status code 400",
+}
+
+StatusCodes.NOTFOUND;
+
+const n = 1234;
+const m = 1234;
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+console.log(add(n, m));
+  
