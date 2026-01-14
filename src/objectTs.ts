@@ -31,3 +31,10 @@ const adrakgChai : Tea ={
 }
 
 
+type cup ={size: string}
+
+let smallCup : cup ={size: '300ml'}
+let bigCup = {size: '500ml', material: 'steel'}
+
+smallCup = bigCup
+
