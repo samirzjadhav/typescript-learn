@@ -38,3 +38,8 @@ let bigCup = {size: '500ml', material: 'steel'}
 
 smallCup = bigCup
 
+
+type Brew = {brewTime: number}
+const coffee = {brewTime: 5, beans:'Arabica'}
+const chaiBrew : Brew = coffee
+ 
