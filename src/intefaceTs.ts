@@ -19,3 +19,22 @@ function makeChai(order: ChaiOrder){
 function serveChai(order:ChaiOrder){
     console.log(order)
 }
+
+type TeaRecipe = {
+    milk: number;
+    water: number;
+}
+
+class MasalaChai implements TeaRecipe {
+    water = 100;
+    milk = 20;
+}
+
+interface CupSize{
+    size: 'Small' |  'Large'
+}
+
+class Chai implements CupSize{
+  size: 'Small' | 'Large' = 'Large'
+}
+
