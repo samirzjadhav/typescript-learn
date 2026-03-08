@@ -38,3 +38,25 @@ class Chai implements CupSize{
   size: 'Small' | 'Large' = 'Large'
 }
 
+
+type Response = {ok: true} | {ok:false}
+class  myRes implements Response {
+    ok: boolean = true
+}
+
+
+type TeaType = 'masala' | 'gingar'| 'leamon';
+
+function orderChai(t: TeaType){
+    console.log(t)
+}
+
+type BaseChai = {teaLeaves: number}
+type Extra = {masala :number}
+
+const MasalaChaiWithMe = BaseChai & Extra
+
+const cup:MasalaChaiWithMe ={
+    teaLeaves =  2,
+    masala: 1
+}
