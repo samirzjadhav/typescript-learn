@@ -68,3 +68,18 @@ type User = {
 
 const u1: User = {username: 'samir'}
 const u2: User  = {username:'mohit', bio: 'I am youtuber and I love Gaming'}
+
+// this one are only for readonly its not change when we rechange the appname
+
+type Config = {
+    readonly appName: string;
+    version: number
+}
+
+const cfg: Config = {
+    appName : 'samirji',
+    version: 1
+}
+
+cfg.appName = 'samirpan'
+
