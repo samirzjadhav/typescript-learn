@@ -17,3 +17,17 @@ tea = {
     isHot: true
 
 }
+
+type Tea = {
+    name: string,
+    price: number;
+    ingredient: string[]
+}
+
+const adrakgChai : Tea ={
+    name: 'Adhrak chai',
+    price: 25,
+    ingredient: ['adhrak','tea leaves']
+}
+
+
